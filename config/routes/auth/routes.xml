@@ -1,0 +1,9 @@
+<routes xmlns="http://symfony.com/schema/routing"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://symfony.com/schema/routing
+		http://symfony.com/schema/routing/routing-1.0.xsd">
+
+    <route id="auth_login" path="/login" controller="App\Controller\AuthController::login" methods="POST"/>
+    <route id="auth_register" path="/register" controller="App\Controller\AuthController::register" methods="POST"/>
+    <route id="auth_test" path="/test" controller="App\Controller\AuthController::apiTest" methods="POST"/>
+</routes>

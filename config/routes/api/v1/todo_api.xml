@@ -1,0 +1,17 @@
+<routes xmlns="http://symfony.com/schema/routing"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://symfony.com/schema/routing
+		http://symfony.com/schema/routing/routing-1.0.xsd">
+
+    <route id="todo_get_all" path="/todos" controller="App\Controller\TodoController::getTodos" methods="GET" />
+    <route id="todo_create" path="/todos" controller="App\Controller\TodoController::createTodo" methods="POST" />
+    <route id="todo_update_texts" path="/todos/{id}/infos/texts" controller="App\Controller\TodoController::updateTodoTexts" methods="PUT" />
+    <route id="todo_update_time" path="/todos/{id}/infos/time" controller="App\Controller\TodoController::updateTodoTime" methods="PUT" />
+    <route id="todo_set_done" path="/todos/{id}/done" controller="App\Controller\TodoController::setTodoDone" methods="PUT" />
+    <route id="todo_delete" path="/todos/{id}" controller="App\Controller\TodoController::deleteTodo" methods="DELETE" />
+
+    <route id="todo_add_notification" path="/todos/{todoId}/notification" controller="App\Controller\TodoController::addNotification" methods="POST" />
+    <route id="todo_remove_notification" path="/todos/{todoId}/notification/{notificationId}" controller="App\Controller\TodoController::removeNotification" methods="DELETE" />
+
+    <route id="sendPush" path="/push/send" controller="App\Controller\TodoController::sendPush" methods="POST" />
+</routes>

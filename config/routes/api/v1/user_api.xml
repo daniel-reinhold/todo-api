@@ -1,0 +1,11 @@
+<routes xmlns="http://symfony.com/schema/routing"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://symfony.com/schema/routing
+		http://symfony.com/schema/routing/routing-1.0.xsd">
+
+    <route id="user_change_first_name" path="/user/infos/firstname" controller="App\Controller\UserController::changeFirstName" methods="PUT" />
+    <route id="user_change_last_name" path="/user/infos/lastname" controller="App\Controller\UserController::changeLastName" methods="PUT" />
+    <route id="user_change_date_of_birth" path="/user/infos/birthday" controller="App\Controller\UserController::changeDateOfBirth" methods="PUT" />
+    <route id="user_change_password" path="/user/password" controller="App\Controller\UserController::changePassword" methods="PUT" />
+    <route id="user_delete" path="/user" controller="App\Controller\UserController::deleteUser" methods="DELETE" />
+</routes>

@@ -1,7 +1,11 @@
-controllers:
-    resource: ../src/Controller/
-    type: annotation
+auth:
+    resource: '../config/routes/auth/routes.xml'
+    prefix: '/api/auth'
 
-kernel:
-    resource: ../src/Kernel.php
-    type: annotation
+api_v1:
+    resource: '../config/routes/api/v1/'
+    type: directory
+    prefix: '/api/v1'
+
+api_login_check:
+    path: /api/login_check
